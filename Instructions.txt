@@ -8,24 +8,70 @@ Stacks Exercise:
 
 Create a file filled with sentences.  Write a program that will read the file and for each sentence, reverse the words.
 
-Use a stack to reverse the words of a sentence.  Keep reading words until you have a word that ends in a period, adding them onto a stack.  When you have a word with a period, pop the words off and print them.  Stop when there are no more words in the input.
+Use a Stack to solve the following problem.  Create a file with the following lines from the poem "Mary had a little lamb:"
 
-Example:
-Mary had a little lamb.
-Its fleece was white as snow. 
-…
+Mary had a little lamb
+Whose fleece was white as snow
+Everywhere that Mary went
+The lamb was sure to go
 
-Convert into:
-Lamb little a had mary.
-Snow as white was fleece its.
+
+Write a program that will read the file and push each word in a sentence onto a stack.  Once the sentence is done, you've read a period, pop the stack and print the sentence in reverse order.  Your final output should look like this:
+
+lamb little a had Mary.
+snow as white was fleece Whose.
+went Mary that Everywhere.
+go to sure was lamb The.
 
 *********************************************************************
 
 Queue Exercise:
 
+Use the LinkedListQueue class to simulate a queue, and use the enqueue and the dequeue methods to add and remove from the queue, using FIFO.
+
+Create 3 queues, one called Animal Shelter, another called Cats, and another called Dogs.  Use the following menu-driven application:
+
+1.  Donate a Cat
+2.  Donate a Dog
+3.  Adopt a Cat
+4.  Adopt a Dog
+5.  Adopt Oldest Pet
+6. Exit
+
+
+Each time a person donates a cat or dog, ask for the name of the pet, and then add the pet to both its species queue and the general Animal Shelter queue.  When a person selects to adopt a pet, remove the pet from the appropriate species queue, and also from the Animal Shelter queue.  Take care to find the pet in the Animal queue, and remove it, but put back all the others that follow it, in the same order you found them (hint:  may need a stack as a temp storage).
+
+If a person comes in to adopt the oldest pet in the shelter, then process the Animal Shelter first, dequeue the oldest, and then dequeue it from the appropriate species queue (may have to search both, unless you make the node a Pet with name and species attributes).
+
+
 
 **********************************************************************
 
 LinkedList Exercise:
+
+Using a Linked List structure, determine whether a linked list contains a Palindrome in integers.  For example, the following is a Palindrome:
+
+0-> 1 -> 2 -> 1 -> 0
+
+To solve this problem, following these steps:
+
+1.)  reverse the linked list
+
+2.)  compare the reversed list to the original list
+
+3.)  if they're the same, you have a Palindrome.
+
+
+Create the following methods in a driver class:
+
+boolean isPalindrome(LinkedListNode head)  ~ given the starting node of a linked list, will return whether the linked list is a Palindrome.
+
+LinkedListNode reverseAndClone(LinkedListNode node) ~ given the starting node of a linked list, will return the starting node of the reversed linked list.
+
+boolean isEqual(LinkedListNode one, LinkedListNode two) ~ given the starting node of 2 linked lists, will return whether they are both the same.
+
+
+Create a linked list that is a Palindrome, and call the isPalindrome method.  Test to ensure it returns True.
+Then, create a linked list that is NOT a Palindrome, and ensure the call to isPalindrome returns a False.
 
 **********************************************************************
