@@ -1,3 +1,5 @@
+Spring 2017
+
 This project will consist of 3 distinct programs that will be coded by a team of 3 students.  Each student will select 1 program to code, debug, and test. Then, each student will select the remaining programs written by a teammates, to thoroughly test and debug.  If any errors are found, the team member will report the problems found to the original author, so that he/she can correct it, and re-commit it to the project.  
 
 Each team will be assigned to a specific team number, and will always work within that team's section.
